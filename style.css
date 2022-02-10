@@ -1,0 +1,38 @@
+* , *::after, *::before{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header {
+  flex: 1;
+}
+
+.game {
+  border: 4px solid #2E3D49;
+  border-radius: 4px;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px 10px;
+  max-width: 694px;
+}
+
+.game-cell {
+  padding: 5rem;
+  border-radius: 4px;
+  background-color: #2E3D49;
+  cursor: pointer;
+}
